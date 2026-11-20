@@ -1,12 +1,13 @@
 {
-  "name": "scaffold",
+  "name": "south-range",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --import ./scripts/register-test-hooks.mjs --test src/lib/catalogue.test.ts src/lib/ask.test.ts"
   },
   "dependencies": {
     "next": "16.4.6",
